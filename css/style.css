@@ -121,6 +121,32 @@ body {
   "paragraph selfimage"
 }
 
+#categoryGrid4 {
+  margin: 0px 5%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 300px 200px 200px;
+  grid-template-areas:
+  "footerTitle footer2 contact"
+  "email contact"
+}
+
+#email{
+  grid-area: email;
+}
+
+#footerTitle {
+  grid-area: footertitle;
+}
+
+#footer2{
+  grid-area: footer2;
+}
+#contact{
+  grid-area: contact;
+}
+
 #selfImage{
   grid-area: selfimage;
   background-image: url("../images/selfportraitillo\ -\ combinedlayers.png");
@@ -203,6 +229,20 @@ body {
   border-radius: 40px;
   
 }
+
+.categoryGridArea1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  padding-top: 50px;
+  
+}
+
+
 
 .heading {
   background-color: #ffeeeeb3;
@@ -308,12 +348,13 @@ h4 {
   color: #636364;
 }
 
+
 @media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
   }
   .icons {
-    margin-left: auto;
+    margin-left: auto;ategory
   }
 }
 
@@ -339,4 +380,3 @@ h4 {
     ;
   }
 }
-
