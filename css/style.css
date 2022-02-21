@@ -127,27 +127,24 @@ body {
   margin: 0px 5%;
   position: relative;
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  grid-template-rows: 300px 200px 200px;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 300px;
   grid-template-areas:
-  "footerTitle footer2 contact"
-  "email contact"
+  "footerTitle"
+  "emailIcon email"
 }
-
 
 #email{
   grid-area: email;
 }
 
-#footerTitle {
-  grid-area: footertitle;
+#email_icon{
+  grid-area: email_icon;
+
 }
 
-#footer2{
-  grid-area: footer2;
-}
-#contact{
-  grid-area: contact;
+#footerTitle {
+  grid-area: footertitle;
 }
 
 #selfImage{
@@ -162,6 +159,7 @@ body {
 #travelApp {
   grid-area: travelapp;
   background-image: url("../images/travel.jpg");
+  background-size: contain;
 }
 
 #Artly {
@@ -214,8 +212,6 @@ body {
   grid-area: communitybuilding;
   background-image: url("../images/community.jpg");
 }
-
-
 
 
 .categoryGridArea {
@@ -361,7 +357,8 @@ body {
 }
 
 img{
-  padding-top: 35px;
+  padding-top: 8px;
+  padding-right: 10px;
 }
 
 /* Typography CSS */
