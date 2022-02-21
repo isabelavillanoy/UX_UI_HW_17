@@ -113,7 +113,7 @@ body {
 #categoryGrid3 {
   margin: 0px 5%;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   border-radius: 40px;
   display: grid;
   column-gap: 80px;
@@ -273,11 +273,50 @@ body {
 
 
 /* blog-cards */
-.row-cards{
-  
+.parentContainer {
+  display: flex;
+  background-color: #e6c9d2;
+  padding: 20px;
+  column-gap: 20px;
+  margin: 40px;
 }
 
+.flexChild{
+  background-color: rgb(250, 218, 223);
+  padding: 10px;
+  margin: 10px;
+  height: 200px;
+  width: 400px;
+  flex-grow: 2;
+}
 
+#text{
+  text-size-adjust: 10px;
+}
+
+.flexblock{
+  position: relative;
+  padding-top: 10px;
+}
+
+/* Skills */
+
+.parentContainer2 {
+  display: flex;
+  background-color: #e6c9d2;
+  padding: 20px;
+  column-gap: 20px;
+  margin: 40px
+}
+
+.flexChild2 {
+  background-color: rgb(250, 218, 223);
+  padding: 10px;
+  margin: 10px;
+  height: 200px;
+  width: 400px;
+  flexg-grow: 2
+}
 
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
