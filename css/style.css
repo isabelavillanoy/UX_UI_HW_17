@@ -403,7 +403,7 @@ h4 {
     display: none;
   }
   .icons {
-    margin-left: auto;ategory
+    margin-left: auto
   }
 }
 
@@ -413,19 +413,15 @@ h4 {
     margin: 20px;
   }
   #heroGrid {
-    grid-template-areas:
-    "featuredProduct featuredProduct"
-    "secondaryProduct CTA";
+  grid-template-areas:
+  "headline profilePicture"
   }
   #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "bookcases"
-      "bedroom"
-      "patio"
-      "couches"
-      "desks"
-    ;
+    grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "travelapp artly ysm"
+  "illustration digitalart socialmedia"
   }
+
 }
