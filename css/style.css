@@ -1,0 +1,342 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("../images/heroimagebackground.png");
+}
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px 10%;
+  display: grid;
+  min-height: 300px;
+  padding-top: 50px;
+  height: 50vh;
+  grid-template-rows: 75%;
+  grid-template-columns: 55% 20%;
+  grid-template-areas:
+  "headline profilePicture"
+}
+
+#backgroundImage {
+  grid-area: headline;
+  background-image: url("../images/heroimagebackground.png");
+}
+
+#profilePicture {
+  grid-area: profilePicture;
+  background-image: url("../images/image_self.jpg");
+  border-radius: 50px;
+  width: 500px;
+}
+
+#slogan {
+  line-height: 50px;
+  position: relative;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8) transparent;
+  position: absolute;
+  right: 100px;
+  left: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.groupSeven {
+  position: absolute;
+  padding-top: 30px
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  width: 100px;
+  margin: 50px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-items: left;
+  position: relative
+  ;
+}
+
+
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  padding: 30px;
+  column-gap: 40px;
+  row-gap: 40px;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "travelapp artly ysm"
+  "illustration digitalart socialmedia"
+}
+
+#categoryGrid2 {
+  margin: 0px 5%;
+  display: grid;
+  padding: 30px;
+  column-gap: 40px;
+  row-gap: 40px;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "reading writing communitybuilding"
+}
+
+#categoryGrid3 {
+  margin: 0px 5%;
+  position: relative;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+  "paragraph selfimage"
+}
+
+#selfImage{
+  grid-area: selfimage;
+  background-image: url("../images/selfportraitillo\ -\ combinedlayers.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#paragraph{
+  grid-area: paragraph;
+}
+
+#travelApp {
+  grid-area: travelapp;
+  background-image: url("../images/travel.jpg");
+}
+
+#Artly {
+  grid-area: artly;
+  background-image: url("../images/artly-home.png");
+  background-position: center top;
+}
+
+#YSM {
+  grid-area: ysm;
+  background-image: url("../images/ysm-home.png");
+  background-position-y: top;
+}
+
+#illustration {
+  grid-area: illustration;
+  background-image: url("../images/Reimagination.gif");
+}
+
+#digitalArt {
+  grid-area: digitalart;
+  background-image: url("../images/starwarsnyproject.jpg");
+  
+}
+
+
+#socialMedia {
+  grid-area: socialmedia;
+  background-image: url("../images/risetribegolf.jpg");
+  background-position-y: top;
+}
+
+#publications{
+  grid-area: publications;
+}
+
+#reading{
+  grid-area: reading;
+  background-image: url("../images/reading.jpg");
+}
+
+
+#writing{
+  grid-area: writing;
+  background-image: url("../images/writing.jpg");
+}
+
+
+#communityBuilding{
+  grid-area: communitybuilding;
+  background-image: url("../images/community.jpg");
+}
+
+
+
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  background-color: #e6c9d2;
+  border-radius: 40px;
+  
+}
+
+.heading {
+  background-color: #ffeeeeb3;
+  padding: 15px;
+  height: 45px;
+  font-size: 18px;
+  border-top: #ffeeeeb3;
+  border-bottom: 5px solid #ffeeeeb3;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+.card {
+  padding-bottom: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px #cc90a2;
+}
+
+.header {
+  height: 30%;
+  background: rgb(250, 237, 237);
+  color: white;
+  text-align: center;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  width: 0.5%;
+  margin: 10px 0 5px 0;
+}
+
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #cc90a2;
+  font-weight: 700;
+}
+
+
+/* Typography CSS */
+
+h1{
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA";
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bookcases"
+      "bedroom"
+      "patio"
+      "couches"
+      "desks"
+    ;
+  }
+}
+
